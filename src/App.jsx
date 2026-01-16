@@ -27,9 +27,9 @@ function App() {
         <AuthProvider>
             <ThemeProvider>
                 <MovieProvider>
-                    <div className="min-h-screen w-full flex items-center justify-center p-4 md:p-8">
+                    <div className="min-h-screen w-full flex items-start justify-center p-2 xs:p-3 sm:p-4 md:p-6 lg:p-8">
                         {/* Main Glass Container */}
-                        <div className="w-full max-w-[1600px] min-h-[90vh] glass-panel rounded-3xl overflow-hidden flex flex-col relative">
+                        <div className="w-full max-w-[1600px] min-h-[85vh] xs:min-h-[88vh] sm:min-h-[90vh] glass-panel rounded-xl xs:rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col relative">
 
                             <Navbar />
 
@@ -50,7 +50,7 @@ function App() {
                                     <Route path="/admin/*" element={<AdminDashboard />} />
                                 </Routes>
 
-                                <div className="p-6 text-center text-white/20 text-xs text-white">
+                                <div className="p-4 xs:p-6 text-center text-white/20 text-[10px] xs:text-xs text-white">
                                     © 2024 Cinéon. All rights reserved.
                                 </div>
                             </div>
