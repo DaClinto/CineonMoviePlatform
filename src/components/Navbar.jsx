@@ -41,7 +41,7 @@ const Navbar = () => {
             {/* 1. Logo Section */}
             {/* 1. Logo Section */}
             <Link to="/" className="hover:opacity-80 transition flex items-center gap-2">
-                <img src="/src/assets/cineon-logo.png" alt="Cinéon" className="w-[90px] h-[90px] object-contain" />
+                <span className="text-3xl font-bold text-white">CINEON</span>
             </Link>
 
             {/* 2. Center Pill Navigation (Search & Filters) */}
