@@ -39,7 +39,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="px-4 xs:px-6 sm:px-8 py-4 xs:py-6 relative z-50 shrink-0 m-2 xs:m-[15px] mb-0 xs:mb-[-5px]">
+        <nav className="px-4 xs:px-6 sm:px-8 py-4 xs:py-6 relative z-50 shrink-0">
             {/* Logo - Left */}
             <div className="flex items-center justify-between mb-12">
                 <Link to="/" className="hover:opacity-80 transition flex items-center gap-2">

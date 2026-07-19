@@ -123,10 +123,12 @@ const Movie = () => {
             )}
 
             {/* Movie Details */}
-            <div className="px-8 py-8">
+            <div className="px-4 xs:px-6 sm:px-8 py-6 sm:py-8">
                 <div className="grid md:grid-cols-[250px_1fr] gap-8">
-                    <div>
-                        <img src={movie.poster_path} alt={movie.title} className="w-full rounded-3xl shadow-2xl border border-white/10" />
+                    <div className="flex justify-center md:block">
+                        <div className="w-2/3 sm:w-1/2 md:w-full max-w-[300px] md:max-w-none">
+                            <img src={movie.poster_path} alt={movie.title} className="w-full rounded-3xl shadow-2xl border border-white/10" />
+                        </div>
                     </div>
 
                     <div>

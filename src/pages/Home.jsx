@@ -71,7 +71,7 @@ const Home = () => {
                         <div key={movie.id} className={viewMode === 'list' ? "flex gap-3 xs:gap-4 items-center bg-white/5 p-3 xs:p-4 rounded-xl xs:rounded-2xl" : ""}>
                             {viewMode === 'list' ? (
                                 <>
-                                    <img src={movie.poster_path} alt={movie.title} className="w-16 xs:w-20 sm:w-24 h-20 xs:h-28 sm:h-36 object-cover rounded-lg xs:rounded-xl flex-shrink-0" />
+                                    <img src={movie.poster_path} alt={movie.title} className="w-16 xs:w-20 sm:w-24 aspect-[3/4] object-cover rounded-lg xs:rounded-xl flex-shrink-0" />
                                     <div className="flex-1 min-w-0">
                                         <h3 className="text-base xs:text-lg sm:text-xl font-bold text-white truncate">{movie.title}</h3>
                                         <p className="text-gray-400 line-clamp-2 text-xs xs:text-sm hidden xs:block">{movie.overview}</p>

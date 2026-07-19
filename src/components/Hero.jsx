@@ -10,7 +10,7 @@ const Hero = ({ movie, secondaryMovie }) => {
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 xs:gap-6 mb-6 xs:mb-8 sm:mb-10">
 
             {/* Primary Hero Card */}
-            <div className="relative h-[200px] xs:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[380px] xl:h-[400px] rounded-xl xs:rounded-2xl sm:rounded-[2rem] overflow-hidden group border border-white/5 shadow-2xl">
+            <div className="relative h-[250px] xs:h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] rounded-xl xs:rounded-2xl sm:rounded-[2rem] overflow-hidden group border border-white/5 shadow-2xl">
                 <img
                     src={movie?.backdrop_path}
                     alt={movie?.title}
@@ -42,7 +42,7 @@ const Hero = ({ movie, secondaryMovie }) => {
 
             {/* Secondary Hero Card */}
             {secondaryMovie && (
-                <div className="relative h-[200px] xs:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[380px] xl:h-[400px] rounded-xl xs:rounded-2xl sm:rounded-[2rem] overflow-hidden group border border-white/5 shadow-2xl hidden xl:block">
+                <div className="relative h-[250px] xs:h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] rounded-xl xs:rounded-2xl sm:rounded-[2rem] overflow-hidden group border border-white/5 shadow-2xl hidden xl:block">
                     <video
                         src={heroVideo}
                         poster={secondaryMovie.backdrop_path}

@@ -28,11 +28,11 @@ const Series = () => {
     if (loading) return <div className="text-white text-center mt-20">Loading Series...</div>;
 
     return (
-        <div className="px-8 pb-10">
-            <h1 className="text-2xl font-bold mb-8 text-white flex items-center gap-2">
+        <div className="px-4 xs:px-6 sm:px-8 pb-10">
+            <h1 className="text-xl xs:text-2xl font-bold mb-6 xs:mb-8 text-white flex items-center gap-2">
                 <span className="text-purple-400">Popular</span> Series
             </h1>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 xs:gap-4 sm:gap-6">
                 {series.map(show => (
                     <MovieCard key={show.id} movie={show} />
                 ))}
